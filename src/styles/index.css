@@ -55,11 +55,11 @@
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(3,32%);
-  gap: 1rem;
+  grid-template-columns: repeat(3,30%);
+  gap: 2rem;
   justify-content: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .contenidoSecundario div{
@@ -150,4 +150,162 @@
 
 /* RESPONSIVE */
 
+@media screen and (max-width:1550px) {
+  .imagenBanner{
+    width: 400px;
+  }
 
+  .contenidoSecundario{
+    grid-template-columns: repeat(3,27%);
+  }
+
+ .contenidoSecundario div{
+  width: 400px;
+  height: 300px;
+  font-size: 40px;
+ }
+ 
+ .contenidoSecundario div:hover{
+  width: 410px;
+  height: 310px;
+  font-size: 45px;
+ }
+
+ .contenidoSecundario p{
+  width: 400px;
+  height: 300px;
+ }
+
+ .contenidoSecundario p:hover{
+  width: 410px;
+  height: 310px;
+ }
+}
+
+@media screen and (max-width:1300px) {
+  .contenidoSecundario{
+    grid-template-columns: repeat(3,27%);
+  }
+
+ .contenidoSecundario div{
+  width: 350px;
+  height: 250px;
+  font-size: 30px;
+ }
+ 
+ .contenidoSecundario div:hover{
+  width: 360px;
+  height: 260px;
+  font-size: 35px;
+ }
+
+ .contenidoSecundario p{
+  width: 350px;
+  height: 250px;
+ }
+
+ .contenidoSecundario p:hover{
+  width: 360px;
+  height: 260px;
+ }
+
+ .contenidoGarantia{
+  font-size: 35px;
+ }
+}
+
+@media screen and (max-width:1200px) {
+  .contenidoSecundario{
+    grid-template-columns: repeat(2,30%);
+  }
+
+ .contenidoSecundario div{
+  width: 300px;
+  height: 200px;
+  font-size: 30px;
+ }
+ 
+ .contenidoSecundario div:hover{
+  width: 310px;
+  height: 210px;
+  font-size: 35px;
+ }
+
+ .contenidoSecundario p{
+  width: 300px;
+  height: 200px;
+ }
+
+ .contenidoSecundario p:hover{
+  width: 310px;
+  height: 210px;
+ }
+
+ .contenidoGarantia{
+  font-size: 30px;
+ }
+}
+
+@media screen and (max-width:980px) {
+  .contenido1 div:nth-of-type(1){
+    text-align: center;
+  }
+
+  .contenido1 div:nth-of-type(2){
+    display: none;
+  }
+
+  .contenidoBotonesPrincipal button{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .contenidoSecundario{
+    grid-template-columns: repeat(1,40%);
+  }
+
+ .contenidoSecundario div{
+  width: 400px;
+  height: 300px;
+  font-size: 30px;
+ }
+ 
+ .contenidoSecundario div:hover{
+  width: 410px;
+  height: 310px;
+  font-size: 35px;
+ }
+
+ .contenidoSecundario p{
+  width: 400px;
+  height: 300px;
+ }
+
+ .contenidoSecundario p:hover{
+  width: 410px;
+  height: 310px;
+ }
+
+ .contenidoGarantia{
+  font-size: 20px;
+ }
+}
+
+@media screen and (max-width:620px) {
+  .contenidoBotonesPrincipal button{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .contenidoSecundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenidoGarantia,.informacionGarantia{
+    height: 30vh;
+  }
+}

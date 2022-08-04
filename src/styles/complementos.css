@@ -18,3 +18,36 @@
 .objetosFooter p{
   color: white;
 }
+
+.tituloFooter{
+  font-size: 80px;
+}
+
+/* RESPONSIVE FOOTER */
+
+@media screen and (max-width:1300px) {
+  .objetosFooter{
+    grid-template-columns: repeat(4,30%);
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .objetosFooter{
+    grid-template-columns: repeat(4,25%);
+  }
+
+  .tituloFooter{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:620px) {
+  .objetosFooter{
+    grid-template-columns: repeat(4,25%);
+    font-size: 15px;
+  }
+
+  .tituloFooter{
+    font-size: 13px;
+  }
+}
